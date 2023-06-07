@@ -17,12 +17,33 @@ main{
     height: 600px;
 }
 
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 /* general class */
 
 .flex{
     display: flex;
 }
 
+.flex-centered-start{
+    justify-content: start;
+    align-items: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+
+.bell-icon{
+    background-color:rgb(142 218 252) ;
+    padding: 1rem;
+    border-radius: 50%;
+}
 /* spcific class */
 
 div.container{
@@ -35,4 +56,20 @@ div.left-column{
 
 div.right-column{
     width: 60%;
+}
+
+div.my-profile{
+    padding: .5rem;
+}
+
+div.flex-centered-start span{
+    margin-left: .5rem;
+}
+
+div.my-profile-icons i{
+    padding: 0 .3rem;
+}
+
+div.notifications-bar{
+    background-color:rgb(142 218 252) ;
 }
