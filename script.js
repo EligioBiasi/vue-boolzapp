@@ -5,5 +5,10 @@ const { createApp } = Vue
       return {
         
       }
-    }
+    },
+
+    methods: {
+
+    },
+    
   }).mount('#app')
