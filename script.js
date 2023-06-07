@@ -106,7 +106,7 @@ const { createApp } = Vue
             },
             {
                 name: 'Claudia',
-                avatar: './img/avatar_5.jpg',
+                avatar: './img/avatar_6.jpg',
                 visible: true,
                 messages: [
                     {
@@ -168,6 +168,7 @@ const { createApp } = Vue
         ],
         // **end of the array **
        lastMessage : 'ultimo messaggio inviato',
+       lastLogIn : 'Ultimo accesso oggi alle 12:00',
       }
     },
 
