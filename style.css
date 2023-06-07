@@ -3,3 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* tag classes */
+
+body{
+    background-color:rgb(0 150 136);
+}
+
+main{
+    width: 1200px;
+    margin: 2rem auto;
+    background-color: rgb(234 234 234);
+    height: 600px;
+}
+
+/* general class */
+
+.flex{
+    display: flex;
+}
+
+/* spcific class */
+
+div.container{
+    width: 100%;
+}
+
+div.left-column{
+    width: 40%;
+}
+
+div.right-column{
+    width: 60%;
+}
