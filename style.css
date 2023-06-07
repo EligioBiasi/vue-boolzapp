@@ -62,7 +62,6 @@ div.container{
     width: 1200px;
     margin: 2rem auto;
     background-color: rgb(234 234 234);
-    height: 600px;
 }
 
 div.left-column{
@@ -99,6 +98,11 @@ div.notifications-bar i{
 }
 
 div.search-bar{
-    padding: 1rem;
-    background-color: ;
+    padding: 0.5rem;
+}
+
+div.search-bar input{
+    padding: 0.4rem;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
