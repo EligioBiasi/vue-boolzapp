@@ -43,6 +43,11 @@ img{
     align-items: center;
 }
 
+.flex-centered-end{
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .space-between{
     justify-content: space-between;
 }
@@ -59,12 +64,22 @@ img{
 .w-80{
     width: 80%;
 }
+
+.w-50{
+    width: 50%;
+}
+
+
 .w-10{
     width: 10%;
 }
 
 .p-5{
     padding: .5rem;
+}
+
+.margin-auto{
+    margin: 0 auto;
 }
 
 .last-message{
@@ -75,6 +90,18 @@ img{
     background-color:white ;
     border-radius: 50%;
     margin-right: .7rem;
+}
+
+.green-pill{
+    padding: 1rem;
+    background-color: rgb(213 249 186);
+    border-radius: 10px;
+}
+
+.white-pill{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
 }
 /* spcific class */
 
@@ -136,8 +163,6 @@ div.my-profile-icons i
 div.right-column main{
     background-image:url("./img/mine.jpg") ;
     height: calc(100% - 134px);
-    width: 100%;
-
 }
 
 footer div.w-80 input{
