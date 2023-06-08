@@ -167,13 +167,16 @@ const { createApp } = Vue
             }
         ],
         // **end of the array **
-       lastMessage : 'ultimo messaggio inviato',
-       lastLogIn : 'Ultimo accesso oggi alle 12:00',
+        indexChat : 0,
+        lastMessage : 'ultimo messaggio inviato',
+        lastLogIn : 'Ultimo accesso oggi alle 12:00',
       }
     },
 
     methods: {
-
+        setIndexChat(index) { 
+            this.indexChat= index;
+        },
     },
     
   }).mount('#app')

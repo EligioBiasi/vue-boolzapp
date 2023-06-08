@@ -192,4 +192,5 @@ span.white-pill p{
 
 div.contact-panel:hover{
     background-color: lightgrey;
+    cursor: pointer;
 }
