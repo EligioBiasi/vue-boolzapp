@@ -150,6 +150,10 @@ div.search-bar input{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+div.contact-panel{
+    background-color: white;
+}
+
 div.chat{
     overflow-y: scroll;
 }
