@@ -177,6 +177,10 @@ const { createApp } = Vue
         setIndexChat(index) { 
             this.indexChat= index;
         },
+
+        messagesFinder(){
+            
+        }
     },
     
   }).mount('#app')

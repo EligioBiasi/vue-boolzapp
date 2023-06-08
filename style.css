@@ -56,6 +56,9 @@ img{
     justify-content: space-around;
 }
 
+d-block{
+    display: block;
+}
 
 .w-100{
     width: 100%;
@@ -80,6 +83,14 @@ img{
 
 .margin-auto{
     margin: 0 auto;
+}
+
+.m-left{
+    margin-left: auto;
+}
+
+.m-right{
+    margin-right: auto;
 }
 
 .last-message{
