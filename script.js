@@ -170,7 +170,6 @@ const { createApp } = Vue
         indexChat : 0,
         lastMessage : 'ultimo messaggio inviato',
         lastLogIn : 'Ultimo accesso oggi alle 12:00',
-        pillContainer: document.querySelector('div.pills-container'),
       }
     },
 
@@ -179,22 +178,6 @@ const { createApp } = Vue
             this.indexChat= index;
         },
 
-        messagesFinder(){
-            if(contacts[indexChat].messages.status==='sent'){
-                this.pillContainer.innerHTML=  
-            `<div class="w-100 p-5 green-pill-container">
-                <span class="flex green-pill w-50 m-left">
-                    
-                </span>
-            </div>`
-            }else{
-                `<div class="flex w-100 white-pill-container">
-                    <span class="flex flex-centered-start white-pill w-50 m-right">
-
-                    </span>
-                </div>`
-            }
-        }
     },
     
   }).mount('#app')
