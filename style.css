@@ -81,6 +81,10 @@ d-block{
     padding: .5rem;
 }
 
+.m-top2{
+ margin-top: 2rem;
+}
+
 .margin-auto{
     margin: 0 auto;
 }
@@ -173,6 +177,10 @@ div.chat-icons i,
 div.my-profile-icons i
 {
     padding: .6rem;
+}
+
+div.right-column main{
+    padding: 1rem;
 }
 
 div.right-column main{
