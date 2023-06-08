@@ -104,16 +104,17 @@
                     </header>
 
                     <main>
-                        <div class="w-80 margin-auto pills-container" v-for="(element,index) in contacts[indexChat].messages">
-                            <div class="w-100 p-5 green-pill-container">
+                        <div class="w-80 margin-auto pills-container" v-for="(element) in contacts[indexChat].messages">
+
+                            <div class="w-100 p-5 green-pill-container" v-if="element.status === 'sent'">
                                 <span class="flex green-pill w-50 m-left">
-                                    
+                                    {{element.message}}
                                 </span>
                             </div>
 
-                            <div class="flex w-100 white-pill-container">
+                            <div class="flex w-100 white-pill-container" v-else="element.status === 'received'">
                                 <span class="flex flex-centered-start white-pill w-50 m-right">
-
+                                    {{element.message}}
                                 </span>
                             </div>
                         </div>
