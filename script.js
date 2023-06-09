@@ -171,6 +171,7 @@ const { createApp } = Vue
         lastMessage : 'ultimo messaggio inviato',
         lastLogIn : 'Ultimo accesso oggi alle 12:00',
         newItem: '',
+        answer:'ok',
       }
     },
 
@@ -185,7 +186,16 @@ const { createApp } = Vue
                 status: 'received',
             })
             this.newItem =''
-    },
-}
+
+            myTimeout = setTimeout(()=> {
+                this.contacts[this.indexChat].messages.push({
+                    message:this.answer,
+                    status: 'sent',
+                })
+            },1000);
+            
+        },
+
+    }
     
   }).mount('#app')
