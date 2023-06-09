@@ -202,7 +202,7 @@ const { createApp } = Vue
 
         searchChat(){
             for(let i = 0; i<this.contacts.length;i++){
-                if(this.contacts[i].name.includes("inputName") || this.inputName==''){
+                if(this.contacts[i].name.toLowerCase().includes(this.inputName) || this.inputName==''){
                     this.contacts[i].visible = true
                 }else{
                     this.contacts[i].visible = false
