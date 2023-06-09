@@ -172,6 +172,7 @@ const { createApp } = Vue
         lastLogIn : 'Ultimo accesso oggi alle 12:00',
         newItem: '',
         answer:'ok',
+        inputName:'',
       }
     },
 
@@ -184,14 +185,14 @@ const { createApp } = Vue
             if(this.newItem.length>=1){
                 this.contacts[this.indexChat].messages.push({
                     message:this.newItem,
-                    status: 'received',
+                    status: 'sent'
                 })
                 this.newItem =''
 
             myTimeout = setTimeout(()=> {
                 this.contacts[this.indexChat].messages.push({
                     message:this.answer,
-                    status: 'sent',
+                    status: 'received'
                 })
             },1000);
             }
@@ -199,6 +200,13 @@ const { createApp } = Vue
             
         },
 
+        searchChat(){
+            if(this.contacts.name.includes(inputName)||this.inputName==''){
+                this.contacts.visible == true
+            }else{
+                this.contacts.visible == false
+            }
+        }
     }
     
   }).mount('#app')
