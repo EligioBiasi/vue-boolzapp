@@ -181,11 +181,12 @@ const { createApp } = Vue
         },
 
         addText(){
-            this.contacts[this.indexChat].messages.push({
-                message:this.newItem,
-                status: 'received',
-            })
-            this.newItem =''
+            if(this.newItem.length>=1){
+                this.contacts[this.indexChat].messages.push({
+                    message:this.newItem,
+                    status: 'received',
+                })
+                this.newItem =''
 
             myTimeout = setTimeout(()=> {
                 this.contacts[this.indexChat].messages.push({
@@ -193,6 +194,8 @@ const { createApp } = Vue
                     status: 'sent',
                 })
             },1000);
+            }
+                
             
         },
 
