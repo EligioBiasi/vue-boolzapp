@@ -170,6 +170,7 @@ const { createApp } = Vue
         indexChat : 0,
         lastMessage : 'ultimo messaggio inviato',
         lastLogIn : 'Ultimo accesso oggi alle 12:00',
+        newItem: '',
       }
     },
 
@@ -178,6 +179,12 @@ const { createApp } = Vue
             this.indexChat= index;
         },
 
+        addText(){
+            this.contacts[this.indexChat].messages.push({
+                text:this.newItem,
+                newStatus: 'newSent',
+            })
     },
+}
     
   }).mount('#app')

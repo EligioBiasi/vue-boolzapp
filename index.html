@@ -106,9 +106,10 @@
                     <main>
                         <div class="w-80 margin-auto pills-container" v-for="(element) in contacts[indexChat].messages">
 
-                            <div class="w-100 p-5 green-pill-container" v-if="element.status === 'sent'">
+                            <div class="w-100 p-5 green-pill-container" v-if="element.status === 'sent'" v-if="element.newStatus === 'newSent'">
                                 <span class="flex green-pill w-50 m-left">
                                     {{element.message}}
+                                    {{element.text}}
                                 </span>
                             </div>
 
@@ -126,7 +127,7 @@
                         </div>
 
                         <div class="w-80">
-                            <input type="text"  placeholder="scrivi un messaggio" class="w-100">
+                            <input type="text"  placeholder="scrivi un messaggio" class="w-100" @keyup.enter="addText" v-model="newItem">
                         </div>
 
                         <div class="w-10 flex flex-centered space-around">
