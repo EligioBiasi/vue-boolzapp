@@ -173,10 +173,6 @@ div.contact-panel{
     background-color: white;
 }
 
-div.chat{
-    overflow-y: scroll;
-}
-
 div.chat-icons i,
 div.my-profile-icons i
 {

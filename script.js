@@ -185,14 +185,14 @@ const { createApp } = Vue
             if(this.newItem.length>=1){
                 this.contacts[this.indexChat].messages.push({
                     message:this.newItem,
-                    status: 'sent'
+                    status: 'received'
                 })
                 this.newItem =''
 
             myTimeout = setTimeout(()=> {
                 this.contacts[this.indexChat].messages.push({
                     message:this.answer,
-                    status: 'received'
+                    status: 'sent'
                 })
             },1000);
             }
@@ -201,10 +201,12 @@ const { createApp } = Vue
         },
 
         searchChat(){
-            if(this.contacts.name.includes(inputName)||this.inputName==''){
-                this.contacts.visible == true
-            }else{
-                this.contacts.visible == false
+            for(let i = 0; i<this.contacts.length;i++){
+                if(this.contacts[i].name.includes("inputName") || this.inputName==''){
+                    this.contacts[i].visible = true
+                }else{
+                    this.contacts[i].visible = false
+                }
             }
         }
     }
