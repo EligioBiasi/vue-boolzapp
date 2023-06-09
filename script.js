@@ -181,9 +181,10 @@ const { createApp } = Vue
 
         addText(){
             this.contacts[this.indexChat].messages.push({
-                text:this.newItem,
-                newStatus: 'newSent',
+                message:this.newItem,
+                status: 'received',
             })
+            this.newItem =''
     },
 }
     

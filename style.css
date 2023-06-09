@@ -85,6 +85,10 @@ d-block{
  margin-top: 2rem;
 }
 
+.transparent-border{
+    border: 5px solid transparent;
+}
+
 .margin-auto{
     margin: 0 auto;
 }
@@ -186,6 +190,7 @@ div.right-column main{
 div.right-column main{
     background-image:url("./img/mine.jpg") ;
     height: calc(100% - 134px);
+    overflow-y: scroll;
 }
 
 footer div.w-80 input{
